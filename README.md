@@ -6,6 +6,9 @@ Following repo is the solution to the interview asignment @ holosuit
 git clone https://github.com/shivam675/flipkart-GRiD3.git
 ```
 
+## OUTPUT DEMO
+![](maker.gif)
+
 # Major Dependencies packages:
 1. Image_pipeline --> `https://github.com/ros-perception/image_pipeline.git`
 2. Python-pcl strawlabs --> `https://github.com/strawlab/python-pcl.git`
