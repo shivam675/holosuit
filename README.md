@@ -46,10 +46,18 @@ wget https://vision.in.tum.de/rgbd/dataset/freiburg1/rgbd_dataset_freiburg1_xyz.
 #### FOR IRL
 <!-- 1. To open arm in Gazebo | Terminal 1: `roslaunch arm_gazebo gazebo_spawn.launch` -->
 <!-- 2. To open arm in Rviz   | Terminal 2: `roslaunch arm_prismatic_octomap bringup.launch` -->
-1. Run **rosbag play** file | Terminal 1 (rosbag): ```sh rosbag play rgbd_dataset_freiburg1_xyz.bag```
-2. Run **depth_to_point.launch** fine | Terminal 2 (image_depth_proc node): ```sh roslaunch depth_to_point depth_to_point.launch```
-
-#### FOR SIMULATION
+1. Run **rosbag play** file | Terminal 1 (rosbag):
+```sh 
+rosbag play rgbd_dataset_freiburg1_xyz.bag
+```
+2. Run **depth_to_point.launch** fine | Terminal 2 (image_depth_proc node): 
+```sh 
+roslaunch depth_to_point depth_to_point.launch
+```
+3. Run **saver.sh** file | Terminal 3
+```sh 
+rosrun pointcloud_saver saver.sh
+```
 
 # Tested on System config 1:
 - Hardware: i3 quad thread AMD64
