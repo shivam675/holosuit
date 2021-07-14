@@ -24,7 +24,7 @@ def point_cloud_callback(pcl_msg):
     LEAF_SIZE = 0.006
     vox.set_leaf_size(LEAF_SIZE, LEAF_SIZE, LEAF_SIZE)
     cloud_voxel = vox.filter()
-    pcl.save(cloud_voxel, "cloud_name.pcd")
+    pcl.save(cloud_voxel, "cloud.pcd")
 
 
 
