@@ -1,0 +1,5 @@
+<launch>
+
+<include file="$(find depth_to_point)/launch/depth_to_point.launch"/>
+<include file="$(find holo_odom)/launch/visual_odom.launch"/>
+</launch>

@@ -1,0 +1,9 @@
+<launch>
+
+    <node name="viz_odom" pkg="viso2_ros" type="mono_odometer">
+    <param name="image" value="/camera/rgb/image_color" />
+    <param name="camera_height" value="1.00" />
+    <param name="camera_pitch"  value="0.00" />
+    </node>
+
+</launch>

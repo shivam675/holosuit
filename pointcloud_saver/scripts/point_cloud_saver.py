@@ -20,11 +20,11 @@ def ros_to_pcl(ros_cloud):
 
 def point_cloud_callback(pcl_msg):
     cloud = ros_to_pcl(pcl_msg)
-    vox = cloud.make_voxel_grid_filter()
-    LEAF_SIZE = 0.006
-    vox.set_leaf_size(LEAF_SIZE, LEAF_SIZE, LEAF_SIZE)
-    cloud_voxel = vox.filter()
-    pcl.save(cloud_voxel, "cloud.pcd")
+    # vox = cloud.make_voxel_grid_filter()
+    # LEAF_SIZE = 0.006
+    # vox.set_leaf_size(LEAF_SIZE, LEAF_SIZE, LEAF_SIZE)
+    # cloud = vox.filter()
+    pcl.save(cloud, "cloud.pcd")
 
 
 
