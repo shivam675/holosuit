@@ -6,9 +6,10 @@ Following repo is the solution to the interview asignment @ holosuit
 git clone https://github.com/shivam675/flipkart-GRiD3.git
 ```
 
-# Major 3rd party packages:
-1. Image_pipeline
-2. 
+# Major Dependencies packages:
+1. Image_pipeline --> `https://github.com/ros-perception/image_pipeline.git`
+2. Python-pcl strawlabs --> `https://github.com/strawlab/python-pcl.git`
+3. point_cloud2 msg ros --> `http://docs.ros.org/en/melodic/api/sensor_msgs/html/msg/PointCloud2.html`
 
 **Thanks to the dataset from tum.de**
 
