@@ -1,5 +1,9 @@
 <launch>
 
 <include file="$(find depth_to_point)/launch/depth_to_point.launch"/>
-<include file="$(find holo_odom)/launch/visual_odom.launch"/>
+<!-- <include file="$(find holo_odom)/launch/visual_odom.launch"/> -->
+
+<!-- <node pkg="rosbag" type="play" name="player" output="screen" args="$(find holo_dataset)/dataset/rgbd_dataset_freiburg1_xyz.bag"/> -->
+
+
 </launch>
