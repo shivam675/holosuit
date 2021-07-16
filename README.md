@@ -6,8 +6,15 @@ Following repo is the solution to the interview asignment @ holosuit
 git clone https://github.com/shivam675/flipkart-GRiD3.git
 ```
 
-## OUTPUT DEMO
+## OUTPUT DEMO OF ORIGINAL POINTCLOUD
+![](output.gif)
+
+
+
+## OUTPUT DEMO OF VOXEL DOWN SAMPELING
 ![](maker.gif)
+
+
 
 # Major Dependencies packages:
 1. Image_pipeline --> `https://github.com/ros-perception/image_pipeline.git`
@@ -44,7 +51,12 @@ wget https://vision.in.tum.de/rgbd/dataset/freiburg1/rgbd_dataset_freiburg1_xyz.
 ## Topics after depth registration are:
 - /cortex_marker_array
 - /nodelet_manager/bond
-- /points    {POINT_CLOUD2 MSG}
+- /points    {POINT_CLOUD2 MSG} --> unregistered
+
+
+## Major topics after rtabmap 
+- /cloud_map {Registered point cloud}
+
 
 
 ### How to run:
