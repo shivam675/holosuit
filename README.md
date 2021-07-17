@@ -55,7 +55,8 @@ wget https://vision.in.tum.de/rgbd/dataset/freiburg1/rgbd_dataset_freiburg1_xyz.
 
 
 ## Major topics after rtabmap 
-- /cloud_map {Registered point cloud}
+- /rtabmap/cloud_map {Registered point cloud in point_cloud2 msg}
+- /odom {odometry msg}
 
 
 
