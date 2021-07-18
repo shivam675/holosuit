@@ -98,8 +98,5 @@ rosrun pointcloud_saver saver.sh
 
 # Done Part:
 1. Point cloud registration via depth_image_proc package in image_pipeline
-
-
-# To-do:
-1. To add odometry visualization
-2. to export pointcloud in .ply extenstion
+2. Added odometry visualization
+3. Export pointcloud in .ply extenstion
