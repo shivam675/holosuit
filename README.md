@@ -24,13 +24,22 @@ git clone https://github.com/shivam675/flipkart-GRiD3.git
 5. rtab_map --> `http://introlab.github.io/rtabmap/`
 
 
+#### Use the following commands to install few binary deps 
+```sh
+sudo apt install ros-melodic-rtabmap*
+```
+```sh
+sudo apt install pcl-tools
+```
+
+
 **Thanks to the dataset from tum.de**
 
 
 ### How to build:
 - In terminal 
 ```sh 
-catkin_make -DCMAKE_BUILD_TYPE=Release -j4 
+catkin_make -DCMAKE_BUILD_TYPE=Release -j$(nproc) 
 ``` 
 - source the workspace
 - Download the dataset from here and place it in the holo_dataset package
@@ -56,7 +65,7 @@ wget https://vision.in.tum.de/rgbd/dataset/freiburg1/rgbd_dataset_freiburg1_xyz.
 
 ## Major topics after rtabmap 
 - /rtabmap/cloud_map {Registered point cloud in point_cloud2 msg}
-- /odom {odometry msg}
+- /odom {odometry msg | visual odometry using the counters retained algorithm}
 
 
 
@@ -70,7 +79,7 @@ rosbag play rgbd_dataset_freiburg1_xyz.bag
 ```
 2. Run **depth_to_point.launch** fine | Terminal 2 (image_depth_proc node): 
 ```sh 
-roslaunch depth_to_point depth_to_point.launch
+roslaunch depth_to_point rtabmap.launch
 ```
 3. Run **saver.sh** file | Terminal 3
 ```sh 
