@@ -14,6 +14,8 @@ git clone https://github.com/shivam675/flipkart-GRiD3.git
 ## OUTPUT DEMO OF VOXEL DOWN SAMPELING
 ![](maker.gif)
 
+### Check the full video here:
+[2+ mins of video](https://drive.google.com/file/d/19iQAItUQR9pB_nmuCQQGqmKoLbW1-V2t/view?usp=sharing)
 
 
 # Major Dependencies packages:
