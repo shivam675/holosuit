@@ -3,7 +3,7 @@ Following repo is the solution to the interview asignment @ holosuit
 
 # Clone repo instructions
 ```sh
-git clone https://github.com/shivam675/flipkart-GRiD3.git
+git clone https://github.com/shivam675/holosuit.git
 ```
 
 ## OUTPUT DEMO OF ORIGINAL POINTCLOUD
@@ -11,7 +11,7 @@ git clone https://github.com/shivam675/flipkart-GRiD3.git
 
 
 
-## OUTPUT DEMO OF VOXEL DOWN SAMPELING
+## OUTPUT DEMO OF VOXEL DOWN SAMPELING OF SINGLE MESSAGE INSTANCE {Unregistered cloud}
 ![](maker.gif)
 
 ### Check the full video here:
