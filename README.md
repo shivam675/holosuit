@@ -1,6 +1,11 @@
 # holosuit
 Following repo is the solution to the interview asignment @ holosuit
 
+# Goals :
+1. Register the RGBD frames to create a point cloud
+2. Provide a visualization for the camera odometry
+
+
 # Clone repo instructions
 ```sh
 git clone https://github.com/shivam675/holosuit.git
@@ -14,8 +19,12 @@ git clone https://github.com/shivam675/holosuit.git
 ## OUTPUT DEMO OF VOXEL DOWN SAMPELING OF SINGLE MESSAGE INSTANCE {Unregistered cloud}
 ![](maker.gif)
 
+
+# Final Output
+![](odom_display.gif)
+
 ### Check the full video here:
-[2+ mins of video](https://drive.google.com/file/d/19iQAItUQR9pB_nmuCQQGqmKoLbW1-V2t/view?usp=sharing)
+[2+ mins of video](https://youtu.be/hV1kk3OZzvY)
 
 
 # Major Dependencies packages:
