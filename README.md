@@ -26,7 +26,12 @@ git clone https://github.com/shivam675/holosuit.git
 5. rtab_map --> `http://introlab.github.io/rtabmap/`
 
 
-#### Use the following commands to install few binary deps 
+# WORK FLOW 
+<img src="docs/flow_chart.png" alt="workflow"/>
+<br>
+<br>
+
+# Use the following commands to install few binary deps 
 ```sh
 sudo apt install ros-melodic-rtabmap*
 ```
