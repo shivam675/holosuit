@@ -65,7 +65,6 @@ wget https://vision.in.tum.de/rgbd/dataset/freiburg1/rgbd_dataset_freiburg1_xyz.
 - /tf
 
 ## Topics after depth registration are:
-- /cortex_marker_array
 - /nodelet_manager/bond
 - /points    {POINT_CLOUD2 MSG} --> unregistered
 
@@ -78,13 +77,11 @@ wget https://vision.in.tum.de/rgbd/dataset/freiburg1/rgbd_dataset_freiburg1_xyz.
 
 ### How to run:
 #### FOR IRL
-<!-- 1. To open arm in Gazebo | Terminal 1: `roslaunch arm_gazebo gazebo_spawn.launch` -->
-<!-- 2. To open arm in Rviz   | Terminal 2: `roslaunch arm_prismatic_octomap bringup.launch` -->
 1. Run **rosbag play** file | Terminal 1 (rosbag):
 ```sh 
 rosbag play rgbd_dataset_freiburg1_xyz.bag
 ```
-2. Run **depth_to_point.launch** fine | Terminal 2 (image_depth_proc node): 
+2. Run **rtabmap.launch** fine | Terminal 2 (RTABMAP node): 
 ```sh 
 roslaunch depth_to_point rtabmap.launch
 ```
@@ -101,7 +98,7 @@ rosrun pointcloud_saver saver.sh
 - 8 GB 1666 MHz RAM
 - Intel HD GPU 4000
 
-# Done Part:
+# Objectives Completed:
 1. Point cloud registration via depth_image_proc package in image_pipeline
 2. Added odometry visualization
 3. Export pointcloud in .ply extenstion
